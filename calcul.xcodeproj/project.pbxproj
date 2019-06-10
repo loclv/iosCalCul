@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5B1042198F473500F6B632 /* OperationReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B1041198F473500F6B632 /* OperationReader.m */; };
+		1E819A0D198749E900C9C917 /* CentralProcessingUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E819A0C198749E900C9C917 /* CentralProcessingUnit.m */; };
+		1E819A0E198749E900C9C917 /* CentralProcessingUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E819A0C198749E900C9C917 /* CentralProcessingUnit.m */; };
 		1EB306CB1974E1A2006766C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB306CA1974E1A2006766C8 /* Foundation.framework */; };
 		1EB306CD1974E1A2006766C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB306CC1974E1A2006766C8 /* CoreGraphics.framework */; };
 		1EB306CF1974E1A2006766C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB306CE1974E1A2006766C8 /* UIKit.framework */; };
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E5B1040198F473500F6B632 /* OperationReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationReader.h; sourceTree = "<group>"; };
+		1E5B1041198F473500F6B632 /* OperationReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationReader.m; sourceTree = "<group>"; };
+		1E819A0B198749E900C9C917 /* CentralProcessingUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CentralProcessingUnit.h; sourceTree = "<group>"; };
+		1E819A0C198749E900C9C917 /* CentralProcessingUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CentralProcessingUnit.m; sourceTree = "<group>"; };
 		1EB306C71974E1A2006766C8 /* calcul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calcul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB306CA1974E1A2006766C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1EB306CC1974E1A2006766C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,8 +124,12 @@
 				1EB306DC1974E1A2006766C8 /* Main.storyboard */,
 				1EB306DF1974E1A2006766C8 /* ViewController.h */,
 				1EB306E01974E1A2006766C8 /* ViewController.m */,
+				1E5B1040198F473500F6B632 /* OperationReader.h */,
+				1E5B1041198F473500F6B632 /* OperationReader.m */,
 				1EB306E21974E1A2006766C8 /* Images.xcassets */,
 				1EB306D11974E1A2006766C8 /* Supporting Files */,
+				1E819A0B198749E900C9C917 /* CentralProcessingUnit.h */,
+				1E819A0C198749E900C9C917 /* CentralProcessingUnit.m */,
 			);
 			path = calcul;
 			sourceTree = "<group>";
@@ -196,7 +207,7 @@
 		1EB306BF1974E1A2006766C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = HEDSPI;
 				TargetAttributes = {
 					1EB306E71974E1A2006766C8 = {
@@ -206,7 +217,7 @@
 			};
 			buildConfigurationList = 1EB306C21974E1A2006766C8 /* Build configuration list for PBXProject "calcul" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -249,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E819A0D198749E900C9C917 /* CentralProcessingUnit.m in Sources */,
 				1EB306E11974E1A2006766C8 /* ViewController.m in Sources */,
 				1EB306DB1974E1A2006766C8 /* AppDelegate.m in Sources */,
 				1EB306D71974E1A2006766C8 /* main.m in Sources */,
+				1E5B1042198F473500F6B632 /* OperationReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E819A0E198749E900C9C917 /* CentralProcessingUnit.m in Sources */,
 				1EB306F61974E1A2006766C8 /* calculTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,22 +319,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -333,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -343,29 +372,43 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -376,9 +419,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "calcul/calcul-Prefix.pch";
 				INFOPLIST_FILE = "calcul/calcul-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "GMO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,9 +434,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "calcul/calcul-Prefix.pch";
 				INFOPLIST_FILE = "calcul/calcul-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "GMO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -413,6 +460,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "calculTests/calculTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "GMO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -431,6 +479,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "calcul/calcul-Prefix.pch";
 				INFOPLIST_FILE = "calculTests/calculTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "GMO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -456,6 +505,7 @@
 				1EB306FB1974E1A2006766C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EB306FC1974E1A2006766C8 /* Build configuration list for PBXNativeTarget "calculTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +514,7 @@
 				1EB306FE1974E1A2006766C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
